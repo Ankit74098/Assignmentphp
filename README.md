@@ -17,10 +17,23 @@ This PHP application accepts a visitor’s email address and then verifies the e
 
 ##---Subscription----###
 User will enter his/her email address and then verify the email address with OTP(One Time Password) which will be sent to the visitor's email id and after verification with the correct OTP success message will be displayed on the screen and welcome message will be sent to the visitor's email id. If in case OTP entered by the user is incorrect then Invalid OTP warning will be displayed on the screen. After the successful verification of email id user will get random XKCD comics in mail indox in every 5 minutes. To unsubscribe user can click on the unsubscribe button in mail.
+
+
+
+
 ##---Un-subscribe---###
 
+
+
+
 User will enter his/her email address and if the email address is not a subscribed email id then Email not found error will be displayed. If the email entered is a subscribed email id, then user will get unsubscribed message on the screen and also an email message to unsubscribe. To subscribe again, user can click on the Subscribe again button link in the email message.
+
+
+
+
 ##--Admin Panel-----###
+
+
 
 Admin will have to enter the email id and password to login into admin panel. If the email or password is incorrect, then Invalid Credential error message will get displayed. If the email and password is correct, then email containing the OTP(One Time Password) and link will sent to the admin email. OTP and link will be valid only upto 2 minutes and after that they both will expire. If the OTP entered by the admin is incorrect then Invalid OTP error message will be displayed and if OTP entered is correct then user will be redirected to the Admin Home Page and login session will be created for the admin. If the admin will click on the login thorough link, then if link is not expired it will get redirected to the Admin Home Page otherwise after expire it will redirect the admin to the Admin Login Page.
 
@@ -42,11 +55,27 @@ In the Change Password tab, admin has to enter his/her current password, new pas
 On clicking the logout tab button, admin will get logged out and all the sessions will get destroyed and admin will redirected to the Admin login page
 
 If the size of the screen will reduce then tab content will be hidden and only the tab icons will be visible.
+
+
+
+
 ##---Random XKCD comics---##
+
+
+
 Every verified/subscribed user will get random XKCD comics on his/her email id in every 5 minutes, email will contain an attachment along with the inline image as well as comic content. To fetch the comic data, https://c.xkcd.com/random/comic is used programmatically to return a random comic URL which then further sanitize and then use to get all data for content.
+
+
+
 ##---Database----####
+
+
+
 By running the table configuration PHP script, both the tables for user and admin with their key constraints will be created automatically. If the table is created successfully then table create message will show otherwise if table is already created then table already created message will be shown and the prerequiste to run this command is that database should exist otherwise script will show the Database connection error.
 
 
 #######----Development----#####
+
+
+
 Want to improve? Great! Make the changes and raise a PR. Reach out to me over engtilakchandra@gmail.com
