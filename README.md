@@ -1,8 +1,5 @@
 ###Tech Stack Knowledge
-Frontend Language : HTML, CSS, JavaScript
-
-Backend Language : PHP
-Server : Apache
+as well as HTML,CSS ,Git ,php,javascript,XAMMP Server application
 Programming Style : Object Oriented Programming Style for Backend
 
 Mailing Service : PHP mail() function with help of sendmail integrated with Amazon
